@@ -748,24 +748,25 @@ function getRandomNum(min, max) {
   return Math.floor(Math.random() * (max - min) + min);
 }
 
+//warning
+const warningBtn = document.querySelector(".warning__btn");
+const warningPopup = document.querySelector('.warning');
+warningBtn.addEventListener('click', (evt) => {
+  warningPopup.classList.add('hide');
+  document.body.style.overflowY = 'visible';
+})
+//hidden text
+const warningHiddenLink = document.querySelector(".warning__text-link");
+const warningHiddenText = document.querySelector(".warning__text-hidden");
+warningHiddenLink.addEventListener('click', (evt) => {
+  evt.preventDefault();
+  warningHiddenText.classList.add('visible');
+})
+
 window.addEventListener("load", (evt) => {
-  AOS.init();
+  //AOS.init();
 
-  //warning
-  const warningBtn = document.querySelector(".warning__btn");
-  const warningPopup = document.querySelector('.warning');
-  warningBtn.addEventListener('click', (evt) => {
-    warningPopup.classList.add('hide');
-    document.body.style.overflowY = 'visible';
-  })
 
-  //hidden text
-  const warningHiddenLink = document.querySelector(".warning__text-link");
-  const warningHiddenText = document.querySelector(".warning__text-hidden");
-  warningHiddenLink.addEventListener('click', (evt) => {
-    evt.preventDefault();
-    warningHiddenText.classList.add('visible');
-  })
 
   createMemories(memories);
 
