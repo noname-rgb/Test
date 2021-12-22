@@ -753,7 +753,6 @@ const warningBtn = document.querySelector(".warning__btn");
 const warningPopup = document.querySelector('.warning');
 warningBtn.addEventListener('click', (evt) => {
   warningPopup.classList.add('hide');
-  //document.body.style.overflowY = 'visible';
 })
 //hidden text
 const warningHiddenLink = document.querySelector(".warning__text-link");
