@@ -696,7 +696,7 @@ const unsortedMemories = [
     img: "./images/Memories/21.jpg",
     description:
       "Помню до сих пор этот момент когда мы вместе поехали на велосипедах на новый мост и фоткались в разных местах. И как на нас орали мужики с другого берега, ахах...",
-    date: new Date(2021, 07, 11),
+    date: new Date(2021, 07, 19),
   },
   {
     img: "./images/Memories/22.jpg",
